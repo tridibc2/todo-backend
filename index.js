@@ -65,9 +65,11 @@ app.use(globalErrorMiddleware.globalNotFoundHandler);
  * Create HTTP server.
  */
 
+const port = process.env.PORT || 5000;
+
 const server = http.createServer(app);
 // start listening to http server
-server.listen(appConfig.port);
+server.listen(port);
 server.on("error", onError);
 server.on("listening", onListening);
 
