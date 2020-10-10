@@ -17,7 +17,7 @@ This project was generated with Node.js version 10.13.0.
 ```
 
 ```
-3. git remote add origin https://github.com/laffingDragons/Todo-Backend.git
+3. git remote add origin https://github.com/tridibc2/todo-backend
 ```
 
 ```
