@@ -2,13 +2,6 @@
 
 This project was generated with Node.js version 10.13.0.
 
-## Getting Started
-
-### Documentation
-
-<!-- #### [Apidoc](http://todo-apidocs.akshaypatil.online/)
-#### [Eventdoc](http://todo-eventdocs.akshaypatil.online/)   -->
-
 ### Prerequisites
 
 1. [Node.js](https://nodejs.org/en/download/)
@@ -42,16 +35,13 @@ This project was generated with Node.js version 10.13.0.
 ```
 //Config example
 
-appConfig.port = 3000;
+appConfig.port = 5000;
 appConfig.allowedCorsOrigin = "*";
 appConfig.env = "dev";
 appConfig.db = {
     uri: '<Your Mongodb uri>'
   }
 appConfig.apiVersion = '/api/v1';
-
-nodeMailer.email="<Your Email for sending mails>";
-nodeMailer.password = "<Your Password>";
 ```
 
 9. Save changes.
@@ -66,11 +56,11 @@ nodeMailer.password = "<Your Password>";
 
 ## Deployed at
 
-`http://todo-node.akshaypatil.online/`
+`http://api.tridibchatterjee.xyz/`
 
 ## Authors
 
-- **Akshay Patil** - _Initial work_ - [Portfolio](https://laffingdragons.github.io/Material-Portfolio/)
+- **Tridib Chatterjee** -
 
 ## License
 
