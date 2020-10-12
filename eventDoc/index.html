@@ -53,6 +53,10 @@
     border-radius: 10px;
 
   }
+    
+  #verifyUser {
+    height: 350px;
+  }
 
   #userId {
     height: 350px;
@@ -178,7 +182,23 @@
           <h3>verifyUser event</h3>
           <p>This event
             <b>("verifyUser")</b> has to be listened on the user's end to verify user authentication. user will only be set
-            as online user after verification of authentication token.</p>
+            as online user after verification of authentication token. Example output is as follows:</p>
+            
+            <pre>
+            {
+            
+            userId:     'unique user Id',
+            firstName:    'firstname of user',
+            lastName:     'lastname of user',
+            email:        'email of user',
+            mobileNumber: 'phone number of user',
+            friends: [friends of user],
+            request: [received list of friend request],
+            requested: [ sent list of  ] 
+            }
+                
+        </pre>
+           <br>
         </div>
         <div id="online-user-list">
           <h3>online-user-list event</h3>
@@ -192,16 +212,17 @@
           <b>This event's name is actually dynamic and refers to the userId of the logged in user.</b>
           <p>This event
             <b>("userId")</b> has to be listened to identify an individual notify message that has been received. Example output
-            it as follows:</p>
+            is as follows:</p>
           <pre>
             {
                 notifyId: 'unique notify id',
-                message: 'you message',
-                createdOn: date, 
                 receiverId: 'userId of receiver',
                 receiverName: full name of receiver,
                 senderId: 'userId of sender',
                 senderName: 'full name of sender'
+                message: 'you message',
+                createdOn: date, 
+
             }
         </pre>
           <br>
@@ -213,7 +234,7 @@
             data has to be emitted</p>
           <pre>
             {
-              senderName: 'John Doe',
+              senderName: 'user name',
               senderId: 'userId of sender',
               message: 'your chat message',
               createdOn: date
@@ -251,11 +272,11 @@
             has to be emitted</p>
           <pre>
             {
-                senderName: 'John Doe',
+                senderName: 'user name',
                 senderId: 'userId of sender',
-                message: 'your chat message',
                 receiverId: 'userId of receiver',
                 receiverName: full name of receiver,
+                message: 'your chat message',
                 createdOn: date
                 }
               </pre>
@@ -268,7 +289,7 @@
             has to be emitted</p>
           <pre>
             {
-                senderName: 'John Doe',
+                senderName: 'user name',
                 senderId: 'userId of sender',
                 message: 'your chat message',
                 createdOn: date

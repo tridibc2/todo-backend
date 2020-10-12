@@ -6,7 +6,6 @@ This project was generated with Node.js version 10.13.0.
 
 1. [Node.js](https://nodejs.org/en/download/)
 2. [MongoDb](https://www.mongodb.com/download-center?jmp=nav#community)
-3. Redis server
 
 ### Installing
 
@@ -56,11 +55,11 @@ appConfig.apiVersion = '/api/v1';
 
 ## Deployed at
 
-`http://api.tridibchatterjee.xyz/`
+`http://backend.tridibchatterjee.xyz/`
 
 ## Authors
 
-- **Tridib Chatterjee** -
+- **Tridib Chatterjee**
 
 ## License
 

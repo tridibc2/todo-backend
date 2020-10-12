@@ -1,5 +1,4 @@
 const express = require("express");
-//const path = require("path");
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const fs = require("fs");
@@ -18,16 +17,10 @@ app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-/* app.use(express.static(path.join(__dirname, 'public'))); */
 app.use(routeLoggerMiddleware.logIp);
 app.use(globalErrorMiddleware.globalErrorHandler);
 
-/* app.use(express.static(path.join(__dirname, 'client'))); */
-
 const modelsPath = "./app/models";
-const controllersPath = "./app/controllers";
-const libsPath = "./app/libs";
-const middlewaresPath = "./app/middlewares";
 const routesPath = "./app/routes";
 
 app.all("*", function (req, res, next) {
