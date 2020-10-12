@@ -48,7 +48,7 @@ appConfig.apiVersion = '/api/v1';
 11. Run MongoDb server.
 
 ```
-12. node app.js
+12. node index.js
 ```
 
 13. Your project should be running on localhost.
