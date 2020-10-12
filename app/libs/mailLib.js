@@ -219,7 +219,7 @@ let forgotPasswordMail = (email, userId) => {
                         <div class="card card-1">
                             <h3 class="header"> CHANGE PASSWORD</h3>
                             <br>
-                            <p class="text-center">Don't worry! We got your back. Please click on the <a href="http://tridibchatterjee.xyz/change-password/${userId}">Link</a> to change your password</p>
+                            <p class="text-center">Don't worry! We got your back. Please click on the <a href="http://tridibchatterjee.xyz/change-password/${userId}">Link</a> to change your password.</p>
                         </div>
                     </div>
                 </div>
